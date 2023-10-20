@@ -1,7 +1,7 @@
 # Copia_Instagram
 Login e Cadastro com back-end (PHP e SQL).
 
-# Informções
+# Informações
 - Na hora do Login, ele faz a consulta pelo número ou e-mail do Usuário para logar.
 - Referente a senha não tem nenhuma restrição.
 
