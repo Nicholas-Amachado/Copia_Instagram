@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Helvetica;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+/*Containers*/
+
+.main-container{
+    display: flex;
+    margin-top: 30px;
+}
+
+.banner-container,
+.form-container{
+    flex: 1 1 0;
+    width: 50%;
+
+}
+
+/*Container do banner*/
+.banner-container{
+    text-align: right;
+}
+.banner-container img{
+    width: 100%;
+    max-width: 380px;
+    margin:  5px 15px 0 0;
+}
+
+/*Container do Formulário*/
+.form-container{
+    text-align: center;
+}
+
+.form-box{
+    border: 1px solid #dbdbdb;
+    background-color: #FFF;
+    width: 380px;
+}
+
+#logo-insta{
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 10px;
+}
+/*Fomulário*/
+#login-form{
+    margin-top: 20px;
+
+}
+
+#login-form input{
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #fafafa;
+    border:1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 5px auto;
+    width: 268px;
+}
+
+#login-form input[type="submit"]{
+    background-color: #b2dFFC;
+    color: #FFF;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+#login-form input[type="submit"]:hover{
+    background-color: #61bcf9;
+}
+/*separador*/
+
+.separator{
+    position: relative;
+}
+
+.line{
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separator span{
+    position: absolute;
+    text-transform: uppercase;
+    color: #bbb;
+    background-color: #FFF;
+    font-size: 14px;
+    width: 50px;
+    top: -9px;
+    margin-left: -25px;
+}
+.facebook-login{
+    margin-bottom: 25px;
+}
+
+.facebook-login a{
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    justify-content: center;
+}
+
+.facebook-login img{
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+}
+
+.facebook-login span{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+/*Esqueceu a senha*/
+.forgot-pass{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.forgot-pass a{
+    text-decoration: none;
+    color: #373799;
+}
+.register-container{
+background-color: #FFF;
+border: 1px solid #dbdbdb;
+width: 380px;
+margin-top: 10px;
+padding: 25px; 
+}
+.register-container p{
+    font-size: 14px;
+    color: #262626;
+}
+.register-container a{
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Apps*/
+.get-app-container{
+    width: 380px;
+    text-align: center;
+}
+
+.get-app-container p{
+    margin: 20px 0;
+    font-size: 13px;
+}
+.get-app-container img{
+    width: 136px;
+    height: 40px;
+}
+.get-app-container a{
+    text-decoration: none;
+}
+
+/*Footer*/
+
+footer{
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer-links{
+    display: flex;
+}
+
+#footer-links li{
+    margin-right:10px;
+    list-style: none;
+}
+
+#footer-links a,
+#copyright{
+    text-decoration: none;
+    font-size: 13px;
+    color: #8e8e8e;
+}
+
+#copyright{
+    margin-top: 20px;
+}
+/*PHP*/
+#password{
+    text-align: left;
+    font-size: 12px;
+    color: rgb(255, 73, 73);
+    margin: 5px auto;
+    width: 268px;
+
+}
+
+/*RESPONSIVA MOBILE*/
+
+@media (max-width:450px){
+    body{
+        background-color: #fff;
+    }
+    .banner-container{
+        display: none;
+    }
+    .form-box,
+    .form-container
+    .register-container,
+    .get-app-container{
+        width: 100%;
+        border: none;
+    }
+    footer{
+        width: 90%;
+    }
+    #footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+

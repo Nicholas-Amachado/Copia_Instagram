@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Helvetica;
+    
+}
+
+body{
+    background-color: #FFF;
+}
+
+.container-main{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.container-register{
+    border: 1px solid #dbdbdb;
+    background-color: #FFF;
+    width: 350px;
+    padding: 2.5rem;
+}
+
+.logo{
+    width: 175px;
+    height: 50px;
+}
+
+.register-p{
+    font-size: 15px;
+    color: #8b8a8a;
+    font-weight: 700;
+}
+
+.button-facebook{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: #0095F6;
+    border:none;
+    font-size: 13px;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: 600;
+}
+.button-facebook img{
+    height: 50%;
+    margin-right: 5px;
+}
+
+.register-p,
+.register-facebook,
+#separator,
+.register
+{
+    margin-top:1.5rem;
+}
+
+#separator{
+    position: relative;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #d7d7d7;
+}
+
+#separator span{
+    text-transform: uppercase;
+    color: #737373;
+    position: absolute;
+    background-color: #fafafa;
+    padding: 5px 10px;
+    top: -12px;
+    font-size: 13px;
+    right: 115px;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    border: #c1bfbf 1px solid;
+    padding: 10px;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+.register-info p{
+    font-size: 12px;
+    margin-bottom: 1rem;
+    color: #989898;
+}
+
+.register-info span{
+    color: #00568f;
+}
+
+.register input[type="submit"]{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: #27a8ff;
+    border:none;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.verificacao{
+    color: rgb(253, 44, 44);
+    font-size: 12px;
+    margin: 2px 5px ;
+    text-align: left;
+}
+
+.login{
+    border: 1px solid #dbdbdb;
+    background-color: #FFF;
+    width: 350px;
+    padding: 1.8rem 2.5rem;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #181818;
+}
+
+.login a{
+    text-decoration: none;
+    color: #089cff;
+    margin-left: 2px;
+}
+
+.get-app-container{
+    background-color: #FFF;
+    width: 350px;
+    padding: 1.8rem 2.5rem;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #181818;
+}
+
+.get-app-container img{
+    width: 45%;
+    margin-top: 15px;
+}
+
+footer{
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer-links{
+    display: flex;
+}
+
+#footer-links li{
+    margin-right:10px;
+    list-style: none;
+}
+
+#footer-links a,
+#copyright{
+    text-decoration: none;
+    font-size: 13px;
+    color: #8e8e8e;
+}
+
+#copyright{
+    margin-top: 20px;
+}
+
+@media (max-width:450px){
+    .container-register,
+    .login{
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    #footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
