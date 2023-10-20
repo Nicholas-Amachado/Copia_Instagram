@@ -10,7 +10,7 @@ $u = new usuario;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <main>
@@ -38,7 +38,7 @@ $u = new usuario;
               if(isset($_POST['username'])){
                 $username = $_POST['username'];
                 $password = $_POST['password'];
-                if(empty($password) && empty($username)){
+                if(empty($password) || empty($username)){
                   echo("Senha ou Usuario em Branco");
                 }
                 else{
@@ -68,7 +68,7 @@ $u = new usuario;
             </div>
           </div>
           <div class="register-container">
-            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            <p>Não tem uma conta? <a href="cadastro.php" target="_blank">Cadastre-se</a></p>
           </div>
           <div class="get-app-container">
             <p>Obtenha o aplicativo</p>
