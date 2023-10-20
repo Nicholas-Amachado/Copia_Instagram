@@ -39,18 +39,22 @@ $u = new usuario();
                     <input type="password" name="senha" placeholder="Senha">
                     <div class="verificacao">
                     <?php
+
                     if (isset($_POST['num_email'])) {
                         $num_email = $_POST["num_email"];
                         $nome = $_POST["nome"];
                         $nome_user = $_POST["nome_user"];
-                        $password = $_POST["senha"];
+                        $password = md5($_POST["senha"]);
                     
                         if(empty($num_email) || empty($nome) || empty($nome_user) || empty($password) ) {
                             echo "<p>Campo em Branco</p>";
-                            echo($password);
                         }
                         else {
                             $u -> conecta();
+                            if($u -> cadastrar($num_email,$nome,$nome_user,$password)== false){
+                                echo"<p>Usuario já cadastrado</p>";
+                            }
+
                         }
                     }
                     ?>
