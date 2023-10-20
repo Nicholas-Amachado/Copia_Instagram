@@ -1,6 +1,13 @@
 # Copia_Instagram
 Login e Cadastro com back-end (PHP e SQL).
 
+- Na hora do Login ele faz a consulta pelo número ou email do Usuário para logar.
+- Referente a senha não tem nenhuma restrição.
+
+- No cadastro não pode ter campo em branco
+- Nem existir usuário já cadastrado no BD, essa consulta também é feita pelo email ou numero.
+- Se tiver tudo certo o usuário é cadastrado.
+
 
 ------------------------------------  Login  ------------------------------------------------------------
 
@@ -10,4 +17,9 @@ https://github.com/Nicholas-Amachado/Copia_Instagram/assets/115105965/5fc6acfd-b
 
 
 https://github.com/Nicholas-Amachado/Copia_Instagram/assets/115105965/1b81484d-0789-433f-8cda-571a5926913f
+
+------------------------------------  Cadastro Efetuado  ------------------------------------------------------------
+
+
+https://github.com/Nicholas-Amachado/Copia_Instagram/assets/115105965/fd3a3dc1-3a8c-4650-b7f2-597b70f3c320
 
